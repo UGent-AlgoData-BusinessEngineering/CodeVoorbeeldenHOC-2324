@@ -1,6 +1,6 @@
 public class LinkedListNode {
     private String value;
-    private LinkedList next;
+    private LinkedListNode next;
 
     public LinkedListNode() {
         this.value = null;
@@ -8,7 +8,7 @@ public class LinkedListNode {
 
     }
 
-    public LinkedListNode(String value, LinkedList next) {
+    public LinkedListNode(String value, LinkedListNode next) {
         this.value = value;
         this.next = next;
     }
@@ -21,11 +21,11 @@ public class LinkedListNode {
         this.value = value;
     }
 
-    public LinkedList getNext() {
+    public LinkedListNode getNext() {
         return next;
     }
 
-    public void setNext(LinkedList next) {
+    public void setNext(LinkedListNode next) {
         this.next = next;
     }
 }
