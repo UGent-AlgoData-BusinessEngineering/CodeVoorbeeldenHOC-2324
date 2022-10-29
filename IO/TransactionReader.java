@@ -17,9 +17,14 @@ public class TransactionReader {
                 // Contains SKU,Quantity,Price,Description
                 lijn = inputStream.nextLine();
                 // Turn the string into an array of strings
+                String[] record = lijn.split(";");
+                String productId = record[0];
+                int hoeveelheid = Integer.parseInt(record[1]);
+                double prijs = Double.parseDouble(record[2]);
+                String beschrijving = record[3];
 
                 // Extract each item
-
+                Transaction transaction = new Transaction(productId,prijs,hoeveelheid, beschrijving);
                 // Output item
                 System.out.println(transaction);// Compute total
                 totaal += hoeveelheid * prijs;
