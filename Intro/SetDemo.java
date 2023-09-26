@@ -9,13 +9,15 @@ public class SetDemo {
         setGetallen.add(8);
 
 
-        //printSet(setGetallen);
+        printSet(setGetallen);
+
+
 
     }
 
     public static void printSet(HashSet<Integer> set ){
         System.out.println("De set bevat:");
-
-
+        for(Integer getal: set)
+            System.out.println(getal);
     }
 }

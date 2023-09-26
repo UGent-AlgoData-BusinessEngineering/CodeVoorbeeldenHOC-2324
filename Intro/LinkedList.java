@@ -10,7 +10,7 @@ public class LinkedList {
     }
 
     public int length(){
-
+        return 0;
     }
 
     public void addNodeToStart(String addNodeData){
