@@ -2,22 +2,20 @@ import java.util.HashSet;
 
 public class SetDemo {
     public static void main(String[] args) {
+        // Toevoegen van getallen aan setGetallen
         HashSet<Integer> setGetallen = new HashSet<>();
-        setGetallen.add(5);
-        setGetallen.add(7);
-        setGetallen.add(14);
-        setGetallen.add(67);
-        setGetallen.add(5);
+        setGetallen.add(8);
+        setGetallen.add(9);
+        setGetallen.add(8);
 
-        printSet(setGetallen);
+
+        //printSet(setGetallen);
 
     }
 
     public static void printSet(HashSet<Integer> set ){
         System.out.println("De set bevat:");
-        for(Integer nummer: set){
-            System.out.println(nummer);
-        }
+
 
     }
 }

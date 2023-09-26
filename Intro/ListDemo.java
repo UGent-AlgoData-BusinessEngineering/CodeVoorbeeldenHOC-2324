@@ -7,21 +7,26 @@ public class ListDemo {
 
 
     public static void main(String[] args) {
-        ArrayList<String> toDoList = new ArrayList<>();
+
+        // aanmaken arraylist ToDo van Strings
+        ArrayList<String> todoLijst = new ArrayList<>();
+
         boolean einde = false;
         Scanner keyboard = new Scanner(System.in);
         while(!einde){
             System.out.println("To do Item ?");
             String line = keyboard.nextLine();
-            toDoList.add(line);
+            // toevoegen aan ToDo list
+            todoLijst.add(line);
             System.out.println("Nog item (ja of nee)?");
             String antwoord = keyboard.nextLine();
-            if(antwoord.equals("Nee"))
+            if(antwoord.equals("nee"))
                 einde = true;
         }
 
         System.out.println("De lijst bestaat uit:");
-        for(String item: toDoList){
+        // Printen items list
+        for(String item: todoLijst){
             System.out.println(item);
         }
 

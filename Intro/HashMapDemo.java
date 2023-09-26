@@ -7,11 +7,7 @@ public class HashMapDemo {
     //Denali 20335
 
     public static void main(String[] args) {
-        HashMap<String, Integer> bergen = new HashMap<>();
-        bergen.put("Mount Everest", 29029);
-        bergen.put("K2", 28251);
-        bergen.put("Denali", 20335);
-        printMap(bergen);
+        // Toevoegen bergen aan hashmap
 
     }
 
